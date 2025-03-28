@@ -9,6 +9,8 @@ This is a React + Express application built with TypeScript and Vite. It include
 
 ## Features
 - React + TypeScript frontend
-- Express backend
-- Authentication system
-- Modern UI components
+- Express backend with RESTful API
+- Secure authentication system
+- Modern UI components with Tailwind CSS
+- Responsive design
+- Git workflow integration

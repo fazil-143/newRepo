@@ -54,8 +54,8 @@ export function ToolCard({
       <div className={`mb-4 flex h-12 w-12 items-center justify-center rounded-lg ${colorClass}`}>
         <span className="material-icons">{icon}</span>
       </div>
-      <h3 className="mb-2 text-xl font-semibold">{title}</h3>
-      <p className="mb-4 text-slate-600 dark:text-slate-400">{description}</p>
+      <h3 className="mb-2 text-xl font-semibold text-gray-900 dark:text-white">{title}</h3>
+      <p className="mb-4 text-gray-700 dark:text-slate-300">{description}</p>
       <div className="mt-auto">
         <button
           onClick={onClick}
@@ -85,8 +85,8 @@ export function FeatureCard({ icon, color, title, description }: { icon: string;
       <div className={`mb-4 flex h-12 w-12 items-center justify-center rounded-lg ${colorClass}`}>
         <span className="material-icons">{icon}</span>
       </div>
-      <h3 className="mb-2 text-xl font-semibold">{title}</h3>
-      <p className="text-slate-600 dark:text-slate-400">{description}</p>
+      <h3 className="mb-2 text-xl font-semibold text-gray-900 dark:text-white">{title}</h3>
+      <p className="text-gray-700 dark:text-slate-300">{description}</p>
     </motion.div>
   );
 }
@@ -103,11 +103,11 @@ export function TestimonialCard({ name, title, text, initials, rating }: { name:
           <span className="font-medium text-slate-500 dark:text-slate-300">{initials}</span>
         </div>
         <div>
-          <h4 className="font-semibold">{name}</h4>
-          <p className="text-sm text-slate-600 dark:text-slate-400">{title}</p>
+          <h4 className="font-semibold text-gray-900 dark:text-white">{name}</h4>
+          <p className="text-sm text-gray-700 dark:text-slate-300">{title}</p>
         </div>
       </div>
-      <p className="text-slate-600 dark:text-slate-400">{text}</p>
+      <p className="text-gray-700 dark:text-slate-300">{text}</p>
       <div className="mt-4 flex text-yellow-400">
         {[...Array(5)].map((_, i) => (
           <span key={i} className="material-icons">

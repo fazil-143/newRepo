@@ -60,10 +60,10 @@ export default function FeaturesSection() {
     <section id="features" className="bg-slate-100 py-16 dark:bg-slate-800/30">
       <div className="container mx-auto px-4">
         <div className="mb-12 text-center">
-          <h2 className="mb-4 text-3xl font-bold md:text-4xl">
+          <h2 className="mb-4 text-3xl font-bold md:text-4xl section-title">
             Why Choose <span className="bg-gradient-to-r from-primary to-secondary-500 bg-clip-text text-transparent">AIScribe</span>
           </h2>
-          <p className="mx-auto max-w-2xl text-slate-600 dark:text-slate-400">
+          <p className="mx-auto max-w-2xl text-gray-800 dark:text-slate-300 section-description">
             Get more done with our powerful content generation platform built for creators and businesses alike.
           </p>
         </div>

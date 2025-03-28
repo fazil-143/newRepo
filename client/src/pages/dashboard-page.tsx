@@ -102,9 +102,9 @@ export default function DashboardPage() {
       <Header />
       <main className="flex-1 py-8">
         <div className="container mx-auto px-4">
-          <div className="mb-8">
-            <h1 className="text-3xl font-bold">Your Dashboard</h1>
-            <p className="text-slate-600 dark:text-slate-400">Manage and access your generated content</p>
+          <div className="mb-8 max-w-3xl">
+            <h1 className="text-4xl font-bold mb-2">Your Dashboard</h1>
+            <p className="text-slate-600 dark:text-slate-400 text-lg">Manage and access your generated content</p>
           </div>
           
           <div className="grid gap-6 lg:grid-cols-4">
@@ -160,9 +160,11 @@ export default function DashboardPage() {
                             className="w-full justify-start"
                             onClick={() => handleOpenTool(tool)}
                           >
-                            <span className={`material-icons mr-2 text-${tool.color}-600`}>
-                              {tool.icon}
-                            </span>
+                            <div className={`inline-flex h-5 w-5 items-center justify-center rounded-sm bg-${tool.color}-100 mr-2`}>
+                              <span className={`material-icons text-${tool.color}-600 text-xs`}>
+                                {tool.icon}
+                              </span>
+                            </div>
                             {tool.name}
                           </Button>
                         </li>
@@ -199,11 +201,11 @@ export default function DashboardPage() {
                             whileHover={{ y: -5, boxShadow: "0 10px 15px rgba(0, 0, 0, 0.1)" }}
                             className="rounded-lg border border-slate-200 p-4 dark:border-slate-700"
                           >
-                            <div className={`mb-3 flex h-10 w-10 items-center justify-center rounded-md bg-${tool.color}-100 text-${tool.color}-600 dark:bg-${tool.color}-900/20 dark:text-${tool.color}-400`}>
+                            <div className={`mb-3 flex h-10 w-10 items-center justify-center rounded-md bg-${tool.color}-100 text-${tool.color}-700 dark:bg-${tool.color}-900/20 dark:text-${tool.color}-400`}>
                               <span className="material-icons">{tool.icon}</span>
                             </div>
-                            <h3 className="mb-1 font-medium">{tool.name}</h3>
-                            <p className="mb-3 text-sm text-slate-600 dark:text-slate-400">
+                            <h3 className="mb-1 font-medium text-gray-900 dark:text-white">{tool.name}</h3>
+                            <p className="mb-3 text-sm text-gray-700 dark:text-slate-300">
                               {tool.description}
                             </p>
                             <Button 
